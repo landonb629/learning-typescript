@@ -73,3 +73,48 @@ let car: {
     chargeVoltage?: number
 }
 ```
+
+# Array Types 
+
+Defining an array 
+``` const fileExtensions: string[] ```
+
+Tuples 
+- multi-element, ordered data structure, where position of each item has some special meaning or convention
+- we can use desructure assignment also 
+``` const [year, make, model] = myCar ``` 
+
+
+# structural vs nominal 
+
+what is type checking?
+- making a comparison of what we are expecting to receive, and what we actually receive
+ex: we have a function that expects and object but we pass in a string
+
+static vs dynamic type systems 
+- static means that you are writing the types in your code 
+- dynamic performs type equivalence at run time 
+
+Nominal type systems are all about names
+
+# Union and Intersection types 
+
+Union Types: allow you to specify multiple possible values for a single variable using the | 
+
+ex: 
+
+``` function combine(input1: string | number) { 
+    return input1
+}
+```
+
+Intersection types: creates a new type by combining multiple existing types. has all the features of an existing type 
+
+``` type typeAB = typeA & typeB; ```
+
+
+# Never type 
+
+- use this as the return type for a function expression or an arrow function that always throws an exception or one that never returns 
+- a function that is used to terminate a program 
+

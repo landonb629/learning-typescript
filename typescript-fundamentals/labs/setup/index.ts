@@ -34,3 +34,9 @@ let myCar = {make: "audi", model: "a4", year: 2018}
 let electricVersion = { make: "audi", model: "r7", year: 2019, isElectric: true}
 printObject(myCar)
 printObject(electricVersion)
+
+// functions using void 
+
+function handleError(errmsg: string): never { 
+    throw new Error(errmsg)
+}
